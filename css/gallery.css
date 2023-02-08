@@ -1,0 +1,107 @@
+body{
+    background-color: #070000;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 16px;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: #e41c1c;
+}
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+.active{
+    font-weight: bold;
+    color: #2d2a2a;
+
+}
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    color: #10221b;
+  }
+  
+.gal {
+  background: #eee;
+}
+.gal .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(23rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 1.5rem;
+  margin: 30px;
+}
+.gal .box-container .box {
+  text-align: center;
+  background: #fff;
+  border: 0.2rem solid #000503;
+  -webkit-box-shadow: 0 0.5rem 1rem rgb(7, 0, 0);
+          box-shadow: 0 0.5rem 1rem rgb(7, 0, 0);
+  border-radius: .5rem;
+  padding-bottom: 25px;
+}
+.gal .box-container .box:hover {
+  background: #080808;
+}
+.gal .box-container .box:hover  > * {
+  color: #fff;
+}
+.gal .box-container .box:hover .btn {
+  border-color: #fff;
+}
+.gal .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #10221b;
+}
+.gal .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: .5rem;
+}
+.gal .box-container .box .image img {
+  height: 140%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .5rem;
+  transform: scale(1);
+    transition: all 2s;
+}
+
+.gal .box-container .box .image img:hover{
+    transform: scale(1.2);
+}
+
+
